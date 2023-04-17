@@ -7,6 +7,8 @@ const openai = new OpenAIApi ( new Configuration({
     apiKey : process.env.API_KEY 
 }))
 
+console.log("Checking")
+
 openai.createChatCompletion({
     model : 'gpt-3.5-turbo',
     messages : [{
